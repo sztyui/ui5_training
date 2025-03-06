@@ -2,14 +2,6 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <Panel headerText="{i18n>panelName}" 
-               width="auto" 
-               accessibleRole="Region" 
-               class="sapUiResponsiveMargin">
-            <Button text="{i18n>buttonText}"
-                    press="onPress" 
-                    class="sapUiMediumMarginBeginEnd">
-            </Button>
-	    </Panel>
+        <mvc:XMLView id="MyPanel" viewName="demo.view.MyPanel" />
     </Page>
 </mvc:View>
