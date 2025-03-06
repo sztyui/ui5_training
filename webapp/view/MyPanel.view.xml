@@ -9,5 +9,13 @@
                     press="onPress" 
                     class="sapUiMediumMarginBeginEnd">
             </Button>
+            <Button text="{i18n>button2Text}"
+                    press="openDialog" 
+                    class="sapUiTinyMarginBeginEnd">
+            </Button>
+            <Button text="{i18n>button3Text}"
+                    press="openDialog2" 
+                    class="sapUiTinyMarginBeginEnd">
+            </Button>
 	    </Panel>
 </mvc:View>
