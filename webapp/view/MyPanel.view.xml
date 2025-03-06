@@ -5,17 +5,21 @@
                width="auto" 
                accessibleRole="Region" 
                class="sapUiResponsiveMargin">
+            <Input
+                value="Sámuel"
+                class="sapUiSmallMarginBottom" 
+                id="nameInput" />
+
             <Button text="{i18n>buttonText}"
                     press="onPress" 
-                    class="sapUiMediumMarginBeginEnd">
-            </Button>
+                    class="sapUiMediumMarginBeginEnd" />
+
             <Button text="{i18n>button2Text}"
                     press="openDialog" 
-                    class="sapUiTinyMarginBeginEnd">
-            </Button>
+                    class="sapUiTinyMarginBeginEnd" />
+
             <Button text="{i18n>button3Text}"
                     press="openDialog2" 
-                    class="sapUiTinyMarginBeginEnd">
-            </Button>
+                    class="sapUiTinyMarginBeginEnd" />
 	    </Panel>
 </mvc:View>
