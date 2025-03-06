@@ -7,8 +7,11 @@ sap.ui.define([
     return Controller.extend("demo.controller.Home", {
         onInit() {
         },
-        onPress: () => {
-            MessageToast.show("Nyomd a lóba... 🐴");
+        onPress() {
+            this.oBundle = this.getView().getModel('i18n').getResourceBundle();
+            const sText = this.oBundle.getText("popUpMessage");
+
+            MessageToast.show(sText);
         }
     });
 });
