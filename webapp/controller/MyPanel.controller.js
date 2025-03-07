@@ -14,10 +14,6 @@ sap.ui.define([
 
     return Controller.extend("demo.controller.MyPanel", {
         onInit() {
-            // const data = {
-            //     name: "E.ON",
-            // }
-            // const model = new JSONModel(data);
             const model = this.getOwnerComponent().getModel("invoices")
             this.getView().setModel(model, "myModel");
         },

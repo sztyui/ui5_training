@@ -2,11 +2,73 @@
     controllerName="demo.controller.TablePanel"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:l="sap.ui.layout"
-    xmlns="sap.m">
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
    <Panel headerText="{i18n>tableHeader}" 
             width="auto" 
             accessibleRole="Region" 
             class="sapUiResponsiveMargin">
+
+<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+            <f:toolbar >
+                <Toolbar >
+                    <Text text="New Invoice"></Text>
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <Button text="Create Invoice" press="createInvoice"></Button>
+                </Toolbar>
+            </f:toolbar>
+			<f:content>
+				<Label text="Supplier Name"></Label>
+                <Input id="name" value="{newInvoice>/SupplierName}" />
+                
+				<Label text="Amount"></Label>
+                <Input id="amount" value="{
+                    path: 'newInvoice>/Amount',
+                    type: 'sap.ui.model.type.Integer'
+                    }" />
+
+
+				<Select id="currency" selectedKey="{newInvoice>/Currency}">
+					<items>
+						<core:Item text="Hungarian Forint" key="HUF"/>
+						<core:Item text="Euro" key="EUR"/>
+					</items>
+				</Select>
+
+                <Label text="Date"></Label>
+                <DatePicker value="{
+                            path:'newInvoice>/Date',
+                            type:'sap.ui.model.type.Date',
+                            formatOptions: {
+                                source: {
+                                    pattern: 'yyyy-MM-dd'
+                                }
+                            }
+                        }"
+                        placeholder="Enter Date"
+                        class="sapUiSmallMarginBottom"/>
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+
+
       <Table items="{
                       path: 'invoices>/Invoices',
                       sorter: [
@@ -20,6 +82,7 @@
                         }
                       ]
                     }"
+             autoPopinMode="true"
              id="invoicesTable">
 
         <headerToolbar>
