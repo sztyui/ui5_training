@@ -22,8 +22,8 @@ sap.ui.define([
         },
         onPress() {
             const oBundle = this.getView().getModel('i18n').getResourceBundle();
-            const sInput = this.getView().byId("nameInput").getValue();
-            const sText = oBundle.getText("popUpMessage", [sInput]);
+            const { name } = this.getView().getModel("myModel").getProperty("/");
+            const sText = oBundle.getText("popUpMessage", [name]);
 
             MessageToast.show(sText);
         },

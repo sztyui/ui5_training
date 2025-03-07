@@ -8,8 +8,14 @@
             <Input
                 value="{myModel>/name}"
                 class="sapUiSmallMarginBottom" 
-                id="nameInput" />
+                id="nameInput" 
+                valueLiveUpdate="true"/>
 
+                <VBox >
+                        <Text text="{myModel>/name}"/>
+                        <Text text="{myModel>/name}"/>
+                        <Text text="{myModel>/name}"/>
+                </VBox>
             <Button text="{i18n>buttonText}"
                     press="onPress" 
                     class="sapUiMediumMarginBeginEnd" />
