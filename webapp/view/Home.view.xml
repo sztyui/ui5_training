@@ -3,6 +3,7 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <mvc:XMLView id="TablePanel" viewName="demo.view.TablePanel" />
+        <mvc:XMLView id="OdataPanel" viewName="demo.view.OdataPanel" />
         <mvc:XMLView id="MyPanel" viewName="demo.view.MyPanel" />
         <mvc:XMLView id="RatingPanel" viewName="demo.view.RatingPanel" />
     </Page>

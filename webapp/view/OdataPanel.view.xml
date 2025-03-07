@@ -1,0 +1,45 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+ 
+    <Panel headerText="Odata panel" class="sapUiResponsiveMargin" width="auto">
+ 
+        <Table growing="true" growingThreshold="5" busyIndicatorDelay="0" autoPopinMode="true" items="{northwind>/Products}">
+ 
+            <headerToolbar>
+                <Toolbar>
+                    <Text text="Products"></Text>
+                </Toolbar>
+            </headerToolbar>
+        
+            <columns>
+                <Column >
+                    <Text text="Product ID"></Text>
+                </Column>
+                <Column >
+                    <Text text="Product Name"></Text>
+                </Column>
+                <Column >
+                    <Text text="Unit Price"></Text>
+                </Column>
+                <Column >
+                    <Text text="Stock"></Text>
+                </Column>
+            </columns>
+ 
+            <items>
+                <ColumnListItem >
+                    <cells>
+                        <Text text="{northwind>ProductID}"></Text>
+                        <Text text="{northwind>ProductName}"></Text>
+                        <Text text="{northwind>UnitPrice}"></Text>
+                        <Text text="{northwind>UnitsInStock}"></Text>
+                    </cells>
+                </ColumnListItem>
+            </items>
+ 
+        </Table>
+        
+    </Panel>
+ 
+</mvc:View>
