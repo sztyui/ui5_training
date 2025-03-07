@@ -1,7 +1,7 @@
-<mvc:View
+<mvc:View controllerName="demo.controller.About"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page title="{i18n>about}">
-        <Text text="About Page"></Text>
+        <Text id="parameterText" text="About Page"></Text>
     </Page>
 </mvc:View>

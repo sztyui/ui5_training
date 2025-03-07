@@ -69,7 +69,9 @@ sap.ui.define([
             }
         },
         goToAboutPage() {
-            const router = this.getOwnerComponent().getRouter().navTo("RouteAbout");
+            const router = this.getOwnerComponent().getRouter().navTo("RouteAbout", {
+                id: "15"
+            });
         }
     });
 });
