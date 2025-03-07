@@ -6,6 +6,6 @@
             width="auto" 
             accessibleRole="Region" 
             class="sapUiResponsiveMargin">
-      <RatingIndicator id="RI_L" maxValue="5" class="sapUiSmallMarginBottom" value="4" iconSize="32px" tooltip="Rating Tooltip" change="showRating"/>
+      <RatingIndicator id="RI_L" maxValue="5" class="sapUiSmallMarginBottom" value="0" iconSize="30px" tooltip="Rating Tooltip" change="showRating"/>
    </Panel>
 </mvc:View>

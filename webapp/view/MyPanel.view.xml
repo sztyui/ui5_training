@@ -21,5 +21,10 @@
             <Button text="{i18n>button3Text}"
                     press="openDialog2" 
                     class="sapUiTinyMarginBeginEnd" />
+
+            <Button text="{i18n>aboutPageButton}"
+                    press="goToAboutPage" 
+                    class="sapUiTinyMarginBeginEnd" />
 	    </Panel>
+            
 </mvc:View>

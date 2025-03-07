@@ -67,6 +67,9 @@ sap.ui.define([
             if(this.dialog) {
                 this.dialog.close();
             }
+        },
+        goToAboutPage() {
+            const router = this.getOwnerComponent().getRouter().navTo("RouteAbout");
         }
     });
 });

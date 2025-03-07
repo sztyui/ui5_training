@@ -79,12 +79,23 @@
                     "target": [
                         "TargetHome"
                     ]
+                },
+                {
+                    "name": "RouteAbout",
+                    "pattern": "/about",
+                    "target": [
+                        "TargetAbout"
+                    ]
                 }
             ],
             "targets": {
                 "TargetHome": {
                     "id": "Home",
                     "name": "Home"
+                },
+                "TargetAbout": {
+                    "id": "About",
+                    "name": "About"
                 }
             }
         },
