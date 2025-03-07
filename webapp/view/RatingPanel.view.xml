@@ -1,0 +1,11 @@
+<mvc:View controllerName="demo.controller.RatingPanel"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+   <Panel headerText="{i18n>ratingHeader}" 
+            width="auto" 
+            accessibleRole="Region" 
+            class="sapUiResponsiveMargin">
+      <RatingIndicator id="RI_L" maxValue="5" class="sapUiSmallMarginBottom" value="4" iconSize="32px" tooltip="Rating Tooltip" change="showRating"/>
+   </Panel>
+</mvc:View>
