@@ -8,7 +8,14 @@
             accessibleRole="Region" 
             class="sapUiResponsiveMargin">
       <Table headerText="{i18n>tableHeaderText}"
-            items="{invoices>/Invoices}">
+             items="{invoices>/Invoices}"
+             id="invoicesTable">
+
+            <headerToolbar>
+                <Toolbar >
+                    <SearchField width="250px" liveChange="onSearch"></SearchField>
+                </Toolbar>
+            </headerToolbar>
         <columns>
             <Column >
                 <Text text="ID"></Text>
