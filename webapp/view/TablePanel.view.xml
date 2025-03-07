@@ -7,7 +7,19 @@
             width="auto" 
             accessibleRole="Region" 
             class="sapUiResponsiveMargin">
-      <Table items="{invoices>/Invoices}"
+      <Table items="{
+                      path: 'invoices>/Invoices',
+                      sorter: [
+                        {
+                            path: 'SupplierName',
+                            group: true
+                        },
+                        {
+                            path: 'Date',
+                            descending: true
+                        }
+                      ]
+                    }"
              id="invoicesTable">
 
         <headerToolbar>
