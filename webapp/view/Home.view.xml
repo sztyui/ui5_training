@@ -4,5 +4,6 @@
     <Page id="page" title="{i18n>title}">
         <mvc:XMLView id="MyPanel" viewName="demo.view.MyPanel" />
         <mvc:XMLView id="RatingPanel" viewName="demo.view.RatingPanel" />
+        <mvc:XMLView id="TablePanel" viewName="demo.view.TablePanel" />
     </Page>
 </mvc:View>

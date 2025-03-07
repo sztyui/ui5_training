@@ -1,0 +1,39 @@
+{
+    "Invoices": [
+        {
+            "ID": 100001,
+            "SupplierName": "Supplier 1",
+            "Amount": 1000,
+            "Currency": "EUR",
+            "Date": "2021-01-01"
+        },
+        {
+            "ID": 100002,
+            "SupplierName": "Supplier 1",
+            "Amount": 1500,
+            "Currency": "USD",
+            "Date": "2021-02-01"
+        },
+        {
+            "ID": 100003,
+            "SupplierName": "Supplier 1",
+            "Amount": 2000,
+            "Currency": "EUR",
+            "Date": "2021-03-01"
+        },
+        {
+            "ID": 100004,
+            "SupplierName": "Supplier 4",
+            "Amount": 2500,
+            "Currency": "USD",
+            "Date": "2021-04-01"
+        },
+        {
+            "ID": 100005,
+            "SupplierName": "Supplier 5",
+            "Amount": 3000,
+            "Currency": "EUR",
+            "Date": "2021-05-01"
+        }
+    ]
+}

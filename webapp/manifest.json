@@ -51,6 +51,10 @@
                 "settings": {
                     "bundleName": "demo.i18n.i18n"
                 }
+            },
+            "invoices": {
+                "uri": "model/invoices.json",
+                "type": "sap.ui.model.json.JSONModel"
             }
         },
         "resources": {

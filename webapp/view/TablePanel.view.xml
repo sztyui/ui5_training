@@ -1,0 +1,42 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+   <Panel headerText="{i18n>tableHeader}" 
+            width="auto" 
+            accessibleRole="Region" 
+            class="sapUiResponsiveMargin">
+      <Table headerText="{i18n>tableHeaderText}"
+            items="{invoices>/Invoices}">
+        <columns>
+            <Column >
+                <Text text="ID"></Text>
+            </Column>
+            <Column >
+                <Text text="Supplier Name"></Text>
+            </Column>
+                        <Column >
+                <Text text="Amount"></Text>
+            </Column>
+                        <Column >
+                <Text text="Currency"></Text>
+            </Column>
+                        <Column >
+                <Text text="Date"></Text>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem vAlign="Middle">
+                <cells>
+                    <Text text="{invoices>ID}"></Text>
+                    <Text text="{invoices>SupplierName}"></Text>
+                    <ObjectNumber number="{invoices>Amount}" 
+                                  state="{= ${invoices>Amount} > 2000 ? 'Error' : 'Information' }"></ObjectNumber>
+                    <Text text="{invoices>Currency}"></Text>
+                    <Text text="{invoices>Date}"></Text>
+                </cells>
+            </ColumnListItem>
+        </items>
+      </Table>
+   </Panel>
+</mvc:View>
