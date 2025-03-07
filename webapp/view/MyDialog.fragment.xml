@@ -4,6 +4,13 @@
    <Dialog
       id="myDialog"
       title="Hello E.ON!">
+
+
+      <VBox >
+            <Text text="{myModel>/name}"/>
+            <Text text="{myModel>/name}"/>
+            <Text text="{myModel>/name}"/>
+      </VBox>
       
       <FlexBox height="100px"
 			   alignItems="Center"
