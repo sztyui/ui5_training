@@ -6,7 +6,7 @@
                accessibleRole="Region" 
                class="sapUiResponsiveMargin">
             <Input
-                value="Sámuel"
+                value="{myModel>/name}"
                 class="sapUiSmallMarginBottom" 
                 id="nameInput" />
 

@@ -5,14 +5,20 @@ sap.ui.define([
     "sap/m/List",
     "sap/m/StandardListItem",
     "sap/m/Button",
-    "sap/m/library"
-], (Controller, MessageToast, Dialog, List, StandardListItem, Button, mobileLibrary) => {
+    "sap/m/library",
+    "sap/ui/model/json/JSONModel"
+], (Controller, MessageToast, Dialog, List, StandardListItem, Button, mobileLibrary, JSONModel) => {
     "use strict";
 
     var ButtonType = mobileLibrary.ButtonType;
 
     return Controller.extend("demo.controller.MyPanel", {
         onInit() {
+            const data = {
+                name: "E.ON",
+            }
+            const model = new JSONModel(data);
+            this.getView().setModel(model, "myModel");
         },
         onPress() {
             const oBundle = this.getView().getModel('i18n').getResourceBundle();
